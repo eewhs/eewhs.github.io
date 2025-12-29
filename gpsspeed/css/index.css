@@ -112,6 +112,10 @@ body {
         position: absolute;
     }
 
+    #total, #max {
+        font-size: 12px;
+    }
+    
     #setimg {
         position: absolute;
         right: 0;
@@ -126,4 +130,5 @@ body {
         height: 100%;
         font-size: 14px;
     }
+
 }
