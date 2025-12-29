@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>GPS速度計</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/maplibre-gl.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <script src="js/maplibre-gl.js"></script>
+    <script src="js/raphael.min.js"></script>
+    <script src="js/justgage.js"></script>
+    <div class="mainwin">
+        <div id="map"></div>
+        <div id="info">
+            <div id="meter"></div>
+            <div id="total">total</div>
+            <div id="max">max</div>
+            <div id="time"></div>
+        </div>
+        <img id="setimg" src="images/setting.png">
+        <div id="setting">
+            <input type="checkbox" id="tracking" checked>
+            <label for="tracking">追跡する</label>
+            <button id="close">閉じる</button>
+        </div>
+    </div>
+    <script type="module" src="js/mainmap.js"></script>
+    <script type="module" src="js/gpssearch.js"></script>
+</body>
+
+</html>
