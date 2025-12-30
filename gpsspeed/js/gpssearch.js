@@ -76,7 +76,8 @@ map.on('load', () => {
             }
         })
         let dis = distance(latitude, lastlat, longitude, lastlon);
-        total += Math.round(dis);
+        total += dis;
+        total = total.toFixed(2);
         dis = (3600 * 1000 / interval) * dis;
         dis = Math.round(dis);
         if (max < dis) {
@@ -106,4 +107,5 @@ map.on('load', () => {
         maximumAge: 'infinity',
     }
     const watchid = navigator.geolocation.watchPosition(onsuccess, onerror, option);
+
 });
