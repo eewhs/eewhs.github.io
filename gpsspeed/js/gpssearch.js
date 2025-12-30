@@ -91,7 +91,7 @@ map.on('load', () => {
         const min = ('00' + time.getMinutes()).slice(-2);
         const sec = ('00' + time.getSeconds()).slice(-2);
         document.getElementById('time').innerHTML = `${year}/${month}/${date} ${hour}:${min}:${sec}`
-        document.getElementById('max').innerHTML = `max:${max}km`;
+        document.getElementById('max').innerHTML = `max:${max}KM`;
         document.getElementById('total').innerHTML = `total:${total}km`;
         meter.refresh(dis);
         lasttime = nowtime;
@@ -109,4 +109,5 @@ map.on('load', () => {
     const watchid = navigator.geolocation.watchPosition(onsuccess, onerror, option);
 
 });
+
 
