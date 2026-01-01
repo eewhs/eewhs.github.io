@@ -49,8 +49,9 @@ map.on('load', () => {
         }
     }, labellayerid);
     map.addControl(new maplibregl.NavigationControl(), "top-right");
+    map.addControl(new maplibregl.FullscreenControl());
 });
-document.getElementById('setimg').addEventListener('click', function() {
+document.getElementById('opensetting').addEventListener('click', function() {
     document.getElementById('setting').style.display = "block";
 })
 document.getElementById('close').addEventListener('click', function() {

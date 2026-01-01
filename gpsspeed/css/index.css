@@ -71,20 +71,42 @@ body {
     text-align: center;
 }
 
-#setimg {
+/*#opensetting {
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     width: 5%;
+}*/
+
+#menubox {
+    width: 30px;
+    margin-right: 10px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    top: 140px;
+    background: #aaa;
+}
+
+#opensetting, #rainmap {
+    border: 1px solid #fff;
+    aspect-ratio: 1 / 1;
+}
+
+#setimg, #rainimg {
+    width: 100%;
 }
 
 #setting {
+    top: 140px;
     z-index: 20;
     position: absolute;
     width: 10%;
     display: none;
-    height: 100%;
+    height: calc(100% - 140px);
     background: #555;
     right: 0;
     font-size: 1vw;
@@ -120,11 +142,7 @@ body {
         font-size: 14px;
     }
 
-    #setimg {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
+    #menubox {
         width: 40px;
     }
 
@@ -135,4 +153,3 @@ body {
         font-size: 14px;
     }
 }
-

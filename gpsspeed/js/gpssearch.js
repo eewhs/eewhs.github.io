@@ -106,10 +106,4 @@ map.on('load', () => {
         maximumAge: 'infinity',
     }
     const watchid = navigator.geolocation.watchPosition(onsuccess, onerror, option);
-
 });
-
-
-
-
-
