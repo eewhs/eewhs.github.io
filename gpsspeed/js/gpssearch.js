@@ -78,11 +78,9 @@ map.on('load', () => {
                 'type': 'LineString',
                 'coordinates': latlons
             }
-        })
+        });
         let dis = distance(latitude, lastlat, longitude, lastlon);
-        if (!Number.isNaN(dis)) {
-            total += dis;
-        }
+        total += dis;
         dis = (3600 * 1000 / interval) * dis;
         dis = Math.round(dis);
         if (max < dis) {
@@ -118,7 +116,6 @@ map.on('load', () => {
     }
     const watchid = navigator.geolocation.watchPosition(onsuccess, onerror, option);
 });
-document.getElementById('copy').addEventListener('click', function() {
+document.getElementById('copy').addEventListener('click', function () {
     navigator.clipboard.writeText(latitude + ", " + longitude);
-
-})
+});
