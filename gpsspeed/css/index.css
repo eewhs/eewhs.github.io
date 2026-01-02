@@ -160,7 +160,7 @@ body {
 
     #rainrader {
         width: 100%;
-        height: auto;
+        height: 100px;
     }
 
     #date_rain {
@@ -191,3 +191,4 @@ body {
         font-size: 14px;
     }
 }
+
