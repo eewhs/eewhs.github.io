@@ -67,9 +67,22 @@ ul.menu ul li {
     border-top: 1px solid white;
 }
 
+#eqinfotable {
+    font-size: 14px;
+    display: block;
+    width: fit-content;
+    overflow: auto;
+    height: 350px;
+    border: 1px solid #000;
+}
+
 @media (max-width: 768px) {
+    ul.menu {
+        margin: 0px;
+        padding: 0px 0px 0px 0px;
+    }
     ul.menu li {
-        width: 100%;
+        width: 49%;
         display: inline-block;
         list-style-type: none;
         position: relative;
@@ -81,7 +94,7 @@ ul.menu ul li {
     }
 
     ul.menu a {
-        width: 50%;
+        width: 50vw;
         color: white;
         line-height: 40px;
         text-align: center;
