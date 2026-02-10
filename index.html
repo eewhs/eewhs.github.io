@@ -29,8 +29,8 @@
         </li>
     </ul>
     <p>広島市で地震観測をしています。</p>
-    <p><img src="image1.png" width="300" style="right: 0; display: block; position: absolute;"></p>
-    <div class="contents" style="display: flex;">
+    <p><img src="image1.png" id="mainimg1"></p>
+    <div class="contents">
         <div class="kyoshin" style="width: fit-content">
             <p style='color: red; font-weight: 600;'>現在の揺れ（強震モニタ）</p>
             <iframe src="https://hiroshimacam.github.io/realtime-earthquake-monitor/" width="359" height="514"></iframe>
@@ -38,6 +38,10 @@
         <div class="eqinfo" style="width: fit-content">
             <p style='color: red; font-weight: 600;'>地震情報</p>
             <span id="eqinfotable"></span>
+        </div>
+        <div class="weather" style="width: fit-content">
+            <p style="color: red; font-weight: 600;">広島市の天気予報</p>
+            <table border="1" id="weather"></table>
         </div>
     </div>
     <a href="quakeMonitoring/" target="_blank">地震観測まとめ</a>
