@@ -67,6 +67,17 @@ ul.menu ul li {
     border-top: 1px solid white;
 }
 
+.contents {
+    display: flex;
+}
+
+#mainimg1 {
+    right: 0; 
+    display: block; 
+    position: absolute;
+    width: 300px;
+}
+
 #eqinfotable {
     font-size: 14px;
     display: block;
@@ -74,6 +85,11 @@ ul.menu ul li {
     overflow: auto;
     height: 350px;
     border: 1px solid #000;
+}
+
+#weather {
+    text-align: center;
+    display: block;
 }
 
 @media (max-width: 768px) {
@@ -102,5 +118,14 @@ ul.menu ul li {
         text-decoration: none;
         font-weight: bold;
         display: block;
+    }
+
+    .contents {
+        display: block;
+    }
+
+    #mainimg1 {
+        position: relative;
+        width: 100%;
     }
 }
